@@ -1,0 +1,270 @@
+main{
+    overflow: hidden;
+}
+
+body{
+    background-color: #FAF7EB;
+}
+
+/* ****************navbar*********************** */
+header{
+    background-color: #1EBEA5;
+    width: 100vw;
+    height: 75px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+ 
+  .appname{
+      position: relative;
+      top: 15px;
+      margin-left: 10px;
+      font-size: 35px;
+      color: white;
+      font-weight: bold;
+  }
+ .user img{
+     border-radius: 50%;
+     margin-top: 12px
+ }
+ .username{
+     color: white;
+     margin-left: 10px;
+     margin-top: 25px;
+     font-size: 20px;
+ }
+  .logo{
+    width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-left: 25px;
+}
+.signOut{
+    margin-right: 25px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+  .right{
+      float: right;
+  }
+
+
+
+/* **************************************************** */
+.container{
+    display: flex;
+}
+
+/* ********************ONline User********************************** */
+.onlineUser{
+    background-color: #EDF8F5;
+    height: 85vh;
+    width: 40%;
+    overflow: auto;
+}
+
+
+
+
+.status{
+    display: inline-block; 
+    margin-left: 25px; 
+}
+
+.onlineImg{
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.userName{
+    position: relative;
+    top: 15px;
+    font-size: 20px;
+    /* color: white; */
+    color: rgb(96,96,96);
+}
+
+.loc{
+    position: relative;
+    top: 15px;
+ }
+
+ .fa-circle{
+     color: #86BB71;
+     margin-right: 5px;
+ }
+
+ .online{
+     color: #92959E;
+ }
+ 
+ .users{
+     margin: 10px;
+ }
+
+
+/* ***************************Area**************************** */
+.Area{
+    
+    height: 85vh;
+    width: 60%;
+}
+/* *************************************************** */
+.chat{
+    background: url('../images/use.png')fixed no-repeat;
+    background-size: cover;
+    height: 77vh;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.messages {
+    display: table;
+     max-width:80%;
+     min-width:150px;
+     padding:2px;
+     margin:3px;
+     -webkit-border-radius: 2px;
+     border-radius: 2px;
+     color: blue;
+     border:1px solid black;
+     border-radius: 10px;
+     padding: 5px;
+     overflow: hidden;
+  }
+
+  .messages span{
+    color: rgb(96,96,96);
+  }
+
+  .space img , .rightProfile img{
+    border-radius: 50%;
+   
+
+}
+
+.space,.rightProfile{
+    display: flex;
+}
+
+.rightProfile img{
+  order: 2;
+}
+.rightProfile p{
+    margin-left: auto;
+}
+
+.lt{
+    background-color: rgb(220,248,198);
+   
+}
+
+.rt{
+    background-color: white;
+}
+
+
+
+
+.sp{
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+
+/* *************************************** */
+.sendMsg{
+    /* background-color: ; */
+    height: 10vh;
+    /* width: 1vw; */
+    /* width: 0px; */
+    /* border: 1px solid black; */
+}
+
+
+.send{
+    height: 40px;
+    width: 64%; 
+    
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-left: 5%;
+ }
+ .send:hover{
+     border: 0px;
+     border-radius: 0px;
+     border-bottom: 1px solid black;
+ }
+ .send:focus{
+     outline:0;
+    
+ }
+ 
+ .sendMsg button{
+     border: 0px; 
+     /* border-style: none; */
+     /* margin-left: 8%; */
+  
+   cursor: pointer;
+ }
+ .sendMsg button:focus {outline:0;}
+ 
+ .sendMsg .btn.btn-info[disabled] {
+     background-color: #495057;
+ }
+
+
+ /* ***********************Media Query******************** */
+
+ @media screen and (max-width:765px){
+      .onlineUser{
+          display: none;
+      }
+      .Area{
+       height: 85vh;
+        width: 100%;
+    }
+ }
+
+ @media screen and (max-width:665px){
+    .username {
+        display: none;
+    }
+    .user{
+        display: none;
+    }
+ }
+
+ @media screen and (max-width:546px){
+    .logo{
+        /* width: 50px;
+        height: 50px;
+        
+        border-radius: 100%;
+        margin-left: 15px; */
+        display: none;
+    }
+    .appname{
+        font-size: 15;
+        font-weight: normal;
+    }
+
+    .btn{
+        /* padding: 10px 20px; */
+    font-size: 15px;
+    border-radius: 10px;
+    }
+ }
+
+ 

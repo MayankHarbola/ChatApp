@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- -------------- -->
+
+
+    <title>WeChat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+     
+<link rel="stylesheet" href="./css/chat.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+<script src="js/restrict.js"></script>
+<script src="js/storage.js"></script>
+<script src = "js/loadData.js"></script>
+<script src="js/onlineUser.js"></script>
+<script src= "js/chat.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+                <ul>
+                        <li><img class = "logo" src="https://pngimage.net/wp-content/uploads/2018/06/wechat-logo-png-transparent-background-6.png" alt="" srcset=""></li>
+                       <li class="appname">WeChat</li>
+                      
+                       
+                       <li class="signOut right"> <a href="http://localhost:1234/logout"> <button class="btn btn-info ">SIGN-OUT &nbsp; <i class="fas fa-sign-out-alt"></i></button></a></li>
+                       <li class="username right">Mayank Harbola</li>
+                       <li class="user right"><img class = "thumb" src="https://banner2.kisspng.com/20180627/wio/kisspng-computer-icons-user-profile-avatar-jain-icon-5b332c5add9336.0201786915300803469076.jpg" align="middle" height="50" width="50"></li>
+                       
+               
+                      
+                       
+                </ul>
+        </header>
+
+            <div class="container">
+            
+                        <div class="onlineUser">
+                                <div class="users">
+        
+                                        <!-- <img class="onlineImg" src="https://banner2.kisspng.com/20180627/wio/kisspng-computer-icons-user-profile-avatar-jain-icon-5b332c5add9336.0201786915300803469076.jpg" align="middle" height="50" width="50">
+                                       <div class="status"> 
+                                        <div class="userName">Mayank Harbola</div>
+                                        <div class="loc"><i class="fa fa-circle"></i><span class="online">online</span></div>
+                                        </div> -->
+                                </div>
+                               
+                        </div> 
+
+                        <div class="Area">
+                                <div class="chat"></div>
+                                <div class="sendMsg">
+                                        <input class="send" type="text" name="" id="" placeholder=" Type Mesaage Here.........."  onkeyup="stoppedTyping()">
+                                        <button class="btn btn-info " id="start_button" onclick="verify()"  onclick="verify()" disabled>Send &nbsp;&nbsp;<i class="fas fa-paper-plane" ></i></button >
+                                </div>
+                            </div>
+
+            </div>
+    </main>
+</body>
+</html>
+
+
+
+
+ <!-- <div class="space ">
+                
+                                                    <img  src="https://banner2.kisspng.com/20180627/wio/kisspng-computer-icons-user-profile-avatar-jain-icon-5b332c5add9336.0201786915300803469076.jpg" align="middle" height="50" width="50">
+                                    
+                                                    <div class = "msgcontainer lt">
+                                                        <p class="message"><span>Mayank Harbola: </span>Hello</p>
+                                                    </div>
+                                                    
+                                            </div>
+
+                                            <div class="space rightProfile">
+                    
+                                                    <div class = "msgcontainer rt">
+                                                        <p class="message "><span>Mayank2: </span>Hello</p>
+                                                    </div>
+                                        
+                                                    <img class = "right" src="https://banner2.kisspng.com/20180627/wio/kisspng-computer-icons-user-profile-avatar-jain-icon-5b332c5add9336.0201786915300803469076.jpg" align="middle" height="50" width="50">
+                                            
+                                            </div>    -->
