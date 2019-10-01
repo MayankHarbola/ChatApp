@@ -1,6 +1,7 @@
 
 # Chat Application 
-ChatApp using node.js (Mongo db as database) and scoket.io
+
+ChatApp using node.js (mongodb as database) and socket.io 
 
 
 ## How to use
